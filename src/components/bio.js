@@ -57,10 +57,10 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
+        崖っぷちブロガーの「<strong>{author.name}</strong>」と申します。<br />{author.summary}
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+        Twitter:<a href={`https://twitter.com/${social.twitter}`}>
+          @manabisystem
         </a>
       </p>
     </div>

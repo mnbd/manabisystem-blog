@@ -1,17 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `まなびシステム`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`
+      name: `まなびシステム`,
+      summary: `ITやPC関連を中心として体験にもとづいた学びを発信しています。どなたかの学びのキッカケになれたら幸いです。`
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `ITやPC関連を中心とした、体験に基づく学びを発信しています。`,
+    siteUrl: `https://manabisystem.com/`,
     social: {
-      twitter: `kylemathews`
+      twitter: `manabisystem`
     }
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+        head: true
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,13 +57,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      }
-    },
-    `gatsby-plugin-feed`,
+    //`gatsby-plugin-feed`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
