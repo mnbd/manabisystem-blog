@@ -1,0 +1,482 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.491a16106869c73de5f8.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.21.37"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-165312579-3', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/favicon-32x32.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=edf3d310d67f8284a562bc3a58c3e761"/><title data-react-helmet="true">無料ネットサービスを利用した英語勉強法 | まなびシステム</title><meta data-react-helmet="true" name="description" content="こんにちは！ まなびシステム（ @manabisystem ）です。 私は「Duolingo(デュオリンゴ)」というサービスを利用して英語を勉強しています。 今回はDuolingoについてのご紹介と簡単な進め方についてご説明いたします。 目次 Duolingo(デュオリンゴ)とは Duolingo…"/><meta data-react-helmet="true" property="og:title" content="無料ネットサービスを利用した英語勉強法"/><meta data-react-helmet="true" property="og:description" content="こんにちは！ まなびシステム（ @manabisystem ）です。 私は「Duolingo(デュオリンゴ)」というサービスを利用して英語を勉強しています。 今回はDuolingoについてのご紹介と簡単な進め方についてご説明いたします。 目次 Duolingo(デュオリンゴ)とは Duolingo…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="manabisystem"/><meta data-react-helmet="true" name="twitter:title" content="無料ネットサービスを利用した英語勉強法"/><meta data-react-helmet="true" name="twitter:description" content="こんにちは！ まなびシステム（ @manabisystem ）です。 私は「Duolingo(デュオリンゴ)」というサービスを利用して英語を勉強しています。 今回はDuolingoについてのご紹介と簡単な進め方についてご説明いたします。 目次 Duolingo(デュオリンゴ)とは Duolingo…"/><meta data-react-helmet="true" name="google-site-verification" content="cae0696e75b8d17f7decc82d2df3f7ca485d436c"/><link as="script" rel="preload" href="/webpack-runtime-fe71116e022248e079fb.js"/><link as="script" rel="preload" href="/framework-81e6052b3504df28bf0b.js"/><link as="script" rel="preload" href="/styles-ae6d046c35c187471a06.js"/><link as="script" rel="preload" href="/app-99b481ee1f9f6d6caddf.js"/><link as="script" rel="preload" href="/commons-33dae9b3cd16545bc94a.js"/><link as="script" rel="preload" href="/fab8c9364b01cebfd3503fc18011994750f493ff-3db8bee75ffc31a3527a.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-6158fc8786a9c9dce156.js"/><link as="fetch" rel="preload" href="/page-data\2020-06-01-about-duolingo\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/">まなびシステム</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">無料ネットサービスを利用した英語勉強法</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">June 01, 2020</p></header><section><p>こんにちは！ まなびシステム（ <a href="https://twitter.com/manabisystem/">@manabisystem</a> ）です。</p>
+<p>私は「Duolingo(デュオリンゴ)」というサービスを利用して英語を勉強しています。</p>
+<p>今回はDuolingoについてのご紹介と簡単な進め方についてご説明いたします。</p>
+<p>目次</p>
+<ul>
+<li><a href="#Duolingo(%E3%83%87%E3%83%A5%E3%82%AA%E3%83%AA%E3%83%B3%E3%82%B4)%E3%81%A8%E3%81%AF">Duolingo(デュオリンゴ)とは</a></li>
+<li><a href="#Duolingo%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E4%BD%9C%E6%88%90">Duolingoのアカウント作成</a></li>
+<li><a href="#Duolingo%E3%81%AE%E9%80%B2%E3%82%81%E6%96%B9">Duolingoの進め方</a></li>
+<li><a href="#Duolingo%E3%81%AE%E7%89%B9%E5%BE%B4">Duolingoの特徴</a></li>
+<li><a href="#Duolingo%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">Duolingoのメリット</a></li>
+<li><a href="#Duolingo%E3%81%AE%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">Duolingoのデメリット</a></li>
+<li><a href="#%E3%81%82%E3%81%A8%E3%81%8C%E3%81%8D">あとがき</a></li>
+</ul>
+<h2>Duolingo(デュオリンゴ)とは</h2>
+<p>2011年に始まった言語教育サービスです。内容によって有料と無料があります。2016年4月までに59言語に対応し、現在もさらにいくつかの言語を開発中です。</p>
+<p>私はその中で英語の無料サービスを利用させていただいています。ゲーム感覚で進められて、分量も自分で決められます。また毎日継続するような仕組みがあったり、コミュニティでは利用者の方々と会話をすることも可能です。</p>
+<p>Duolingoは、ホームページ版、アイフォン版、アンドロイド版があります。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/92ec87ce3184bb53b72bfa61f9472018/8c557/2020-05-13-screenshot-00013.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 93.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAA7CAAAOwgEVKEqAAAAEAklEQVQ4y3WUW2wUZRTHN/Lgqw/6oCa+G43PPhoffTDBxGgkvpgYFRNivWHUqBS8hVA1iCUpiKAxkQDGQIHY0kJLsVjQDXR3W3a3e5/dbWdmZ+eyu7Mzsz/PzNCiqCf553zzzXf+5/Kd8yXyxjQT5WFmlZEIk+VdLBtn6ToulmVimqZoi3q9Ti6fp1qtUCwW6XseQRAwGAwIJVyHSPxcfIHtqQRvXU4wNJfg3XSCn4qbaakdstklcrkclWqVTDrN5OQkMzMzzM/P02yu4jgOa2trKIpCoVBAb7VIXHP2M5s+wujyo4wWH2E6+R1/mF9hGAbJZFIM1MhgaXmZohidP3+BWSFdWFhgcXGRtDjKZDJRBp5EnVjpH+eX8bNMX3mCufRjHDsxTq57FM1YJZVJUatXaYlnVVUjXSqVJPLshtZ0PXIeliVKeby8lc+yd3Powh0cOpdgd/5eTpS2iLFFu9PCsHX8gc9/SVi/brdDt9eN0g/Xibn614wkH2Rf5vEIXyQfZqr6CV4POdAVrwPcnhsZhCmtE61fxu2S4H9Ea5XlMspoqkalXKFWUyRtLXISpmfbdgSnZ9LzbbqeTd/vkVj3FmwgiAh1W0UzVUm5Tdsx0S090mFgnu9Hkfe8DsevD3Pk6hAHfn+JqdxYTChJ3AZiHdYudBDB/9u/dQlQ2jmqrSWUVl6CqMcpO/6AmjugcRPKTTRc4r2+6F5AqeNTEJS6QYTQbl2sQQEPOyY8qwdsX/H5sOjzXsFnZ8lnVyn+fke+9xR7LGkOC6sOE4rFsYrNWMnhW9G2OKu5U3zTuId054eY8IwQDgvB7ooYC8bqPocbPl9WxYGQHq12wDekeKL7Lm7HwbfaXGm2SLag6U1waPUhst0TtyIcqcZRfSQE+2oheZ/Pyz47ZO+U0kGVS6m3dem5Hm5feqrfYWHNYF4F1TvP/sb9pDqH/xnhp2WPD4ouH5fDdJE9j+Gix+mmKxNTI6WYqE5vo24TdYNLWkg4zWjzPlL2kZjwtBbw4o0+b6/AkGBbzmVrdlHWAa/lPGbX2nLoZSqXLmLKhdvNPIGrcrxqMq/HEe6pb+KaPRYTntL6vJKDV5dOsi21mTeXn2LH4tO8kTPYnve5qnYxljIU1DZOU6X7/DOwMMuo4nJZCNe8KfYom7jeORgT/qr3GcpLZNmD7L3+JOO/beP7i1t4/cYVdknqi7rcstzHDUuaWeaWFTnsWIzkDXmZZKq8i+xt3HWrhpbvYUrfnmz8yHN/3sn7Vx/g2ZkEO/Nb0MV+1bJRpD/qVk+mpE840aGuyAMi7SmPR5eWl5O1sT4p8bjl7DnONPZyTjvAtHaQtHkuHpiNKQnHVF7pwI8fCt/71/T8BU6VUfSPgv2VAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Duolingoのアンドロイドアプリ紹介画像"
+        title="Duolingoのアンドロイドアプリ紹介画像"
+        src="/static/92ec87ce3184bb53b72bfa61f9472018/fcda8/2020-05-13-screenshot-00013.png"
+        srcset="/static/92ec87ce3184bb53b72bfa61f9472018/12f09/2020-05-13-screenshot-00013.png 148w,
+/static/92ec87ce3184bb53b72bfa61f9472018/e4a3f/2020-05-13-screenshot-00013.png 295w,
+/static/92ec87ce3184bb53b72bfa61f9472018/fcda8/2020-05-13-screenshot-00013.png 590w,
+/static/92ec87ce3184bb53b72bfa61f9472018/8c557/2020-05-13-screenshot-00013.png 700w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Duolingoのアカウント作成</h2>
+<p>Duolingoでは、記録を残すためにアカウントを作成する必要があります。ここでは、英語の学習をすることを例にアカウントの作成方法をご説明いたします。</p>
+<h3>1.「さあ、始めましょう」をクリック</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c2ea8c2ec42960901960a2e7dbdcc6af/b6529/2020-05-13-screenshot-00001.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACMElEQVQ4y41Sz28SURDeg3+FhV0oazVKiTHaGtOmTU2whhQWdg21QABFUJN6MLFW2kTRVKl2WQpZflhiJCxivHjQmHjx5MkTTWpsPRkPJib27PHz7dLd0IUmHr68N29mvjfzzVCBxRaCy2/gCsuw+XNw8HkNgwHJOHV0+4ZDMkauVHEmThCrGn7qWLCA47NFsEK+J0m/m6H7jgjrBnQfZfdLUGEmMFfVj7QfKCPggERztQd9ZLTcMdRHCSyfg40TYSNOVQI9WL2zfAeGLfRqbRCqZIN8ATRfxnCigRMRGVZCrBNavaIBhstpp8W7pt3NlVI6GRt+itm6hGz7A0qbu5jIvANDfrUT+BYUeO804Lldx7lkFf67Ci6lX2E8tdFDSrG8CJqrYaaYwMOvh7DybQWVXSCz+QLO1BOSUMDZuIJToSZORxQ4g3VyNjEafQ3XXI20un/VSIVEN6GC+Y/v8Xg7CekHkP8JPNoKYGw5iQHPS0yvTiHaYnFVGUeqNYVYYwShpg1jixEw3hIcQq6rQrJDFt8qwo3vqPzZxv22G6Xff5Hd2YHzehqMr4zRWzcxkZ7D+aU4Lj5IYPJeFJPpyziZWICdK3Zm0D0UOyn7aKyGa28/Y+nLPDLtX3BnP4EOEG0FCbSniMNuGYynjCHuOSzTMgYuEHumsEe2r+WOoYpPEz1dNxQMRTdg9T/Tgh1qMGmJFdSpiyRujdjini31m3L3w7q2h6rQrHmh/2PpVfwDnHAoJJDlcL8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「Duolingoホーム」画面"
+        title="「Duolingoホーム」画面"
+        src="/static/c2ea8c2ec42960901960a2e7dbdcc6af/fcda8/2020-05-13-screenshot-00001.png"
+        srcset="/static/c2ea8c2ec42960901960a2e7dbdcc6af/12f09/2020-05-13-screenshot-00001.png 148w,
+/static/c2ea8c2ec42960901960a2e7dbdcc6af/e4a3f/2020-05-13-screenshot-00001.png 295w,
+/static/c2ea8c2ec42960901960a2e7dbdcc6af/fcda8/2020-05-13-screenshot-00001.png 590w,
+/static/c2ea8c2ec42960901960a2e7dbdcc6af/efc66/2020-05-13-screenshot-00001.png 885w,
+/static/c2ea8c2ec42960901960a2e7dbdcc6af/b6529/2020-05-13-screenshot-00001.png 1049w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>2. 「英語」をクリック</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/daeb1a10f3af693439317a0eb361cbe8/6acbf/2020-05-13-screenshot-00002.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABzklEQVQ4y41TzU7CQBDue/jDTwukgErAg8aTMdGD0VARsFAERU2Mxngw8UIwMR48KFAKFo1GjQcPmpj4BLyBD+MDfM6ulEAtxMPuTme233wz36ygnL5CO3tHLN+CK16BmKjBu1btnr2L+Sy/tK4jVmhhpnjH12S2yf1CIFVHcMOAjy7Yf7JsJ5937feU1jurExc8tHmUKly03DaQXqZ28EEVCF7afJRhMq0jnNb7glZmi4UdxCmB4CZmEVVH8dDA6q4BT+eiW6lgbPWa95WdoytXvBInpn2AYoJKpv5Fl88hxa8gks1A5vbusVF6w+LRMzLld2xffCCaN3miYT0WRNrcCVKMAP0KsaAAYyKn64hoTYTUBiK5Gz4FctoYKhYHZD0Sk3VML5U5Q4ls1tNxUnFEqXXLZ6w9w0SyRAkkdUjqDRZyNcxmapDVJgLEhNnzGjGlkfIndUfFnYAFtk1stvD12cbL5RPv56h6i/bBIb538pjSzM7lquPI/CnZR9nllI5y6RHZ4wf4adDFlIGt/QbKJy2EMg0+MnZmg5jyl8LKkjImQjkTYRIhxMrMmpAL95ggwP+8oj6GTMmwanCgINlBsvk3Kc1idsDBz7GKHwtYGMUWTpSFAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「言語選択」画面"
+        title="「言語選択」画面"
+        src="/static/daeb1a10f3af693439317a0eb361cbe8/fcda8/2020-05-13-screenshot-00002.png"
+        srcset="/static/daeb1a10f3af693439317a0eb361cbe8/12f09/2020-05-13-screenshot-00002.png 148w,
+/static/daeb1a10f3af693439317a0eb361cbe8/e4a3f/2020-05-13-screenshot-00002.png 295w,
+/static/daeb1a10f3af693439317a0eb361cbe8/fcda8/2020-05-13-screenshot-00002.png 590w,
+/static/daeb1a10f3af693439317a0eb361cbe8/efc66/2020-05-13-screenshot-00002.png 885w,
+/static/daeb1a10f3af693439317a0eb361cbe8/6acbf/2020-05-13-screenshot-00002.png 1001w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>3.学習目的を選択し、「次へ」をクリック</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f4aec9f3eb42c91d83fce763909fd208/8efc2/2020-05-13-screenshot-00003.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAB90lEQVQ4y61Ty27TQBT1V/Ib7PgC9iyBBVK/oVIQIJQGVYW2qBWICiiJE+yQ2GnzaOKxPeN5HObecSOCwo6Rjn3vzLnvmcg5BxDa5Vo5z3OMRgniOEaapkiSBINBjOFwiE1R7HBbhfWIPtpoVEKjrgyM9TCGOen4Bxws9i3iGG8rixKibtAYC2stopDNHU6/v8XJVQeiaNggGQ7w/NEDfOh2WG+aBvldhZ9zgWUhvUeNtd8fvewindxiXFISLjjMZmu8uThE9/I1itbhx7NT9A6e4qhz2GZkcfztBr1PQ7zvL9l4owyOrnP04hv0lxXzIkqTFpdc6m05dV0j/TWBKEsEjoNpFOa3Cy+G8pyHqBVmixWUUqGHdKC19r3TnmRYJlhvRC03vocUgDmGsvfn/h90wzbO2Va2wSEZav+nPrk2Q9v4pqcb2JX0zl0IpoB1wu0LAdvJ3iOU3F6b+NUTjLqPQ8k02byCe/YV7vOinbPC6vwE5w/7ENdnzHJ8sHvlIlKtz2z27gVmFwd8JSm6URriKoOtGlANdH3kfIz0+At0mfHO3xlue0hLekfKhIi0R5nXRnF85xy2PGO3e/tWRP2SUkLJmkHyPZRUO7qsiUNyzVOlnv8JHkpVVZhOp8iybC/oCU4mEwbJ/+KRDyFEeHr8jP4DyNdvl6vo9DGXaEYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「学ぶ目的」画面"
+        title="「学ぶ目的」画面"
+        src="/static/f4aec9f3eb42c91d83fce763909fd208/fcda8/2020-05-13-screenshot-00003.png"
+        srcset="/static/f4aec9f3eb42c91d83fce763909fd208/12f09/2020-05-13-screenshot-00003.png 148w,
+/static/f4aec9f3eb42c91d83fce763909fd208/e4a3f/2020-05-13-screenshot-00003.png 295w,
+/static/f4aec9f3eb42c91d83fce763909fd208/fcda8/2020-05-13-screenshot-00003.png 590w,
+/static/f4aec9f3eb42c91d83fce763909fd208/8efc2/2020-05-13-screenshot-00003.png 828w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>4.「アカウントを作る（無料）」をクリック</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c58e47bf50bc152b13feb39834a1e12a/1b19f/2020-05-13-screenshot-00004.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABb0lEQVQoz4WSyU7DMBRF+0ssAbHhB9m0SCzYAGLRr2ADCKklkJYSukK0TZu4GZShGRz7YjvpSEqfdOxn6/nq+tkNHAjO+faaMfAsAzwXoReApBx2XGAqSGmBxu5BOW8h94QAn07BPQ/cdcEJARwHeZYLEYZECCU5Q1GwtWCdm62gVCEdqto9ZY1NZzIy4SYIQ8RxjCRNQfNc7cmcLWvltXdvUtHgpdqqeGKaeHx6hqZp+BgMYNk2RuMxPg0DNpnL0rIN1cD3OiwoIt9Fliw2m/AHTnPkSby++k6bVoI/EcODmcHwKb4CXsswBPo+Q2dewM34/4IkjNEbzTCLEkyCSBArzGpWuaj5dnwMLQdRRusFyyaIoQBSVwzJgY8pviCPxcxUA/48t3BY9sJaGHiZXaNr3+GVlGjkHvq8vVpLuvYtOtYNwtyud8h4oZJ30sbF2xEue2do6SdoCmR+1T9XeUtxqmjqxzAjXZ1jlaFl/ALooEkjVu3HcQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「アカウントを作る」画面"
+        title="「アカウントを作る」画面"
+        src="/static/c58e47bf50bc152b13feb39834a1e12a/fcda8/2020-05-13-screenshot-00004.png"
+        srcset="/static/c58e47bf50bc152b13feb39834a1e12a/12f09/2020-05-13-screenshot-00004.png 148w,
+/static/c58e47bf50bc152b13feb39834a1e12a/e4a3f/2020-05-13-screenshot-00004.png 295w,
+/static/c58e47bf50bc152b13feb39834a1e12a/fcda8/2020-05-13-screenshot-00004.png 590w,
+/static/c58e47bf50bc152b13feb39834a1e12a/efc66/2020-05-13-screenshot-00004.png 885w,
+/static/c58e47bf50bc152b13feb39834a1e12a/1b19f/2020-05-13-screenshot-00004.png 991w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>5.それぞれの項目を入力して「アカウント作成（無料）」をクリック</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7e2ee446034622160ee7eebf43514f99/41be6/2020-05-13-screenshot-00005.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 112.83783783783782%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAA7CAAAOwgEVKEqAAAADdklEQVQ4y51VS09bRxT2D4gaJb+ii1TqMupvICCxZt89UrokWCS/gmXVTZuuaBPEqlRAwDbYhhBSHsZQgu37nHt9n3MfX8+Z62secVQpV/o0M+fxnYdnjitLS0tYXFz8alSrVSwsLGB1dRXz8/OogL4sy/C1X57naj09PcXc3Bwq3c4ZVlb+QBTLSdb/S1gms76+jqmpKVQ4wmAwQBRFdxHHiEgXpSkiKQvwnpEkY7sgCBTh1tYWZmZmipKvr69hmiZs2y4gBOx+H06tBnFyArvXg+h24dTrcA4OIDod2Jal7DRKJqUgTDg9PV0QapoGQUrGmFDX4RwfKyJB5HwWV1cQnz4V51FwQzdU2XcIOUMuu18aMqFhwNnfhzg/hyA9E6kMj44gLi+LDJnQmEDIZFwyK1WWJSGXd3Y2zso5PCwC0Nl2XQWD/D4j5JKZjKF6yYSUAWdSlssBeK/K5oyZ+OICBvlOJCwyNG8ISeZub8P58EH1kc+qn3TfmEh8/Kh6bFB1Gd2GO4Q9EupEZpgWLFvApN6YlKFFpZl6kbVJeuvfKzrrSm71qU2OA43kaXovQ9cYwLdNhI6FyLUReQ4iQ0Py91+Q79uIux11lsdHiC86kEfvCYeITA0++SC/RRgSYWMQYN+M0TZugc4tF2jaKVpWgpYh1b7Ne0Ey3pMN+5IZtkvC6glQ+XmIx78HePg6wDeER7T/7k2Ib1cCPPkzxA9rIZ6uRfj+bYgHv5Ldb74C21V+8fBjGziobWHqGRFuO8Dzmotqy8eL5g2WWgVetn28GoH3L5re2IZ9fqq7WNOpynebeFb2EHnMz/we0glgeX5XlhdDZWNjAzMloaS3OAxiXPYEzq8s/NPV4YUSKV0HmaSICQnxSBlB6/dwNshwoZMsy0mXjIfD+FeWMiYkCKNijWmU8VXgC5tmo5WCJmkCN/AQy0wFYpmURYabm5s3hBERsXLsSFHDMITvB8rhNtiG1ySRyjaO488zDMNo7MBGDCbkecd7XnluJqTPU7KLi1lYBp5QchGZnYbDIXR6DS49fJ4+l/Se+cwDRHgBtCCDTyXno1Ykox6qH6UcsPc/nsKcmePwfLRUNr7ngbvlfeGvoNFoFBnu08zb2dlBnWZdjSY0K/b29rC7u4tms6nAZyVjXYNslG1d+bBvu93G8vIyZmdn8R8Y1XPSVQlBlQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「登録」画面"
+        title="「登録」画面"
+        src="/static/7e2ee446034622160ee7eebf43514f99/fcda8/2020-05-13-screenshot-00005.png"
+        srcset="/static/7e2ee446034622160ee7eebf43514f99/12f09/2020-05-13-screenshot-00005.png 148w,
+/static/7e2ee446034622160ee7eebf43514f99/e4a3f/2020-05-13-screenshot-00005.png 295w,
+/static/7e2ee446034622160ee7eebf43514f99/fcda8/2020-05-13-screenshot-00005.png 590w,
+/static/7e2ee446034622160ee7eebf43514f99/41be6/2020-05-13-screenshot-00005.png 638w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>以上で作成が完了します。</p>
+<h2>Duolingoの進め方</h2>
+<p>ここでは私が普段やっているDuolingoの進め方を簡単にご説明いたします。</p>
+<p>Duolingoの基本は、以下のような出題に繰り返し答えていくことです。</p>
+<ul>
+<li>設問の項目を選択する</li>
+<li>音声で聞いた英文を日本語にする</li>
+<li>日本語の文章を英語にする</li>
+</ul>
+<p>間違えるとしつこく何度もできるまで出題されます。操作的に難しいことはありません。1回レッスンの分量は少ないので、数分のレッスンだけすることも、いくつものレッスンをやることも可能です。</p>
+<p>レッスンは英文法の分類が基本ですが、普段使うようなジャンルの単語を集中的にレッスンしてくれるものもあります。
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/22c015d566898c11aed9d87dc8fb9217/000c7/2020-05-13-screenshot-00006.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 76.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACeElEQVQ4y11UzW7TQBD2iTvvgcRL8Bw8AkKceAo4cAUJIQQHBBJw6AGpaoXUplWLqFTggPqTKK3duLGT2N5d7898jHc3iYOl1ax3Z775vpmxk4UQWCgD4wCtNdq2heO90oBU3d7BGAOlFIw1aKWGnFwBdgw0Y1BzC+Q5srxFWjokcNYHOaJoAadv4BY7fCVA3Xt3Hn2IrWZwqRoo2UC3CmQEjJac2CJh//VDNtjpa2A/AYkf8dwFQ8G7mFwjS1NMixJVtWACJayasJthwC6rX11ACNRtgXL0ng8MCOHc37twf3PwAdXlCSrRYlaWmM0WKMo5NJcmialX2ak5Yrm7vqY0+wrSoxW74EIYzRpsjVhyU3MpCNZarrH0PVgBdrK8//lD4OQ+d2UHNLgLyl5EF7tKWi1qTNIcghu6jO+a2a0ewyCnLk9R53shMN+GboY9hgHw4voWW8dnqOYzBpUeqANfA0aSHcsO1rVXoPwVy9GB9bKGEfDy7xDfPm1z3QpIGaRWde33SQ+NjQnoxZvY5eNNud1ode9ZChzsYd4IHi3r1Vmj/az2GK4lad2gyH8zVRW7TBv3eS2QNWoZCc2gueQPgBuUoKd5WUeSf2DT5wxYRskRMI7NdP8L0u8fkRUV5vPa+wgL3/FknZlWc4fiLUu6wyO0KZlcGPzJ5yeYbj3CPB/wZ7jL3TvkdcTfhdhsylKSZZNnv0D9cvT2FoZryeDEY+N4Fk3FXCqf0DO0LhTc85y+46I/42JPQeOnzHIQgVxsHGPwT4JMHZZdLunvklwYFNKsBpuGj+FOH/BgH8L9vAeavPwPMP5EFI+WOOd6X7A9A7WZB/wHurCEm7JMJIYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「Duolingoユーザーホーム」画面"
+        title="「Duolingoユーザーホーム」画面"
+        src="/static/22c015d566898c11aed9d87dc8fb9217/fcda8/2020-05-13-screenshot-00006.png"
+        srcset="/static/22c015d566898c11aed9d87dc8fb9217/12f09/2020-05-13-screenshot-00006.png 148w,
+/static/22c015d566898c11aed9d87dc8fb9217/e4a3f/2020-05-13-screenshot-00006.png 295w,
+/static/22c015d566898c11aed9d87dc8fb9217/fcda8/2020-05-13-screenshot-00006.png 590w,
+/static/22c015d566898c11aed9d87dc8fb9217/efc66/2020-05-13-screenshot-00006.png 885w,
+/static/22c015d566898c11aed9d87dc8fb9217/000c7/2020-05-13-screenshot-00006.png 1137w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>設問の項目を選択する</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/00d2729b4eec2eca06dad7a3b74e25bb/620ae/2020-05-13-screenshot-00007.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 79.05405405405406%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABsklEQVQ4y6VUO0/DMBDOn+InIDExoY5dYGFigokBwYAAgRASQyWWskDFWBBCPNZKVEAXSkEMVV88WqK0jZvEcfxhp0mVJi20cNEpPjv3+e67uyiO48CyLBiG8W81TRMK5xxSJfAw9c9H+VZBSHynQbbv9JP0IvSdWq0WSqUSyuUyarWa0Dc8Fwp4yOVQFvvFYhFPwpYpBi/0VQlG4kbBu5xSocy2wVjXNgUAY8yN0LYpuMMQ9nUjDG4EDwJf95m2uMQWWTN3zSK+SpgnWanEQRI3R8vCqIIKz53tDSQTW9D1NkzLBPl8hPp6DaI3vfv4cEBVVbEYn8FmfBL5zBXeGxqWZmPYm5/C5VkaDiV4Sc0huzsBtZr3onOGA34IgMP1BZyuTuM8nUaHchzvryC1FsNt9l7kaaF1d4GvzAmIWgf3aIkA+m9ZBPkAtMcZ6bTBHEMUDGjrOupaE4TK/c7vHDqiepJsxrhXZeb1H3fXlFJYgmcquJTrCGC4jxBKYVCzDxuGvj78q4SDiUQ4robBFX/Yfa7GBZRTRAhxR7H3c5BgHVGxIMmjiqZpqFSqaDQaLuA3HSrWNrkeBhMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「設問項目の選択」画面"
+        title="「設問項目の選択」画面"
+        src="/static/00d2729b4eec2eca06dad7a3b74e25bb/fcda8/2020-05-13-screenshot-00007.png"
+        srcset="/static/00d2729b4eec2eca06dad7a3b74e25bb/12f09/2020-05-13-screenshot-00007.png 148w,
+/static/00d2729b4eec2eca06dad7a3b74e25bb/e4a3f/2020-05-13-screenshot-00007.png 295w,
+/static/00d2729b4eec2eca06dad7a3b74e25bb/fcda8/2020-05-13-screenshot-00007.png 590w,
+/static/00d2729b4eec2eca06dad7a3b74e25bb/efc66/2020-05-13-screenshot-00007.png 885w,
+/static/00d2729b4eec2eca06dad7a3b74e25bb/620ae/2020-05-13-screenshot-00007.png 1043w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ecb0cf68a90eb23b28b2bdc1ab573fee/f058b/2020-05-13-screenshot-00009.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABYklEQVQ4y41TXW+CQBC8//+nTHyxqdVoUEnpg6U2goLIR60I6PTmmjV4xdRLJkfudmf3ZhYVhgEWCxdZluHNe0W/38d0OoXjOBiPx9hsNlgul1iv1/A8zyCKYjRNA67L5YL2Up+rFV5GI4RBgPl8bgiHw2cMBk/o9XpwXRcrHeP7PmYzB5PJBO/+B+q67iZszmccj9/Y7XY4nU66co2yLM33f8smM4RM3u8T/YwIRVEgSRJDnue5LnQ0SYKzLk60z2yoR7rowr2l7OqCRwp1dat4WFXV9VLIqGuuJfjSoBSUgDgcDmZnjk3GXEX7f81objQi0T5NkaWZ2akr9RWdqb39MnJcCVmRo0BUGgxgUqnvjOv6njE0ijHMk/g2lCQy4EZ0jVR3tt1uERF6mNkZp4FSdBn2p0Mb0kX77PqKjvibDsUMGQnZC20Af784jhEEoYm1h1q+jSnicpceolUb9+IEP7MW887nvas5AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「正しい意味を選択する」画面"
+        title="「正しい意味を選択する」画面"
+        src="/static/ecb0cf68a90eb23b28b2bdc1ab573fee/fcda8/2020-05-13-screenshot-00009.png"
+        srcset="/static/ecb0cf68a90eb23b28b2bdc1ab573fee/12f09/2020-05-13-screenshot-00009.png 148w,
+/static/ecb0cf68a90eb23b28b2bdc1ab573fee/e4a3f/2020-05-13-screenshot-00009.png 295w,
+/static/ecb0cf68a90eb23b28b2bdc1ab573fee/fcda8/2020-05-13-screenshot-00009.png 590w,
+/static/ecb0cf68a90eb23b28b2bdc1ab573fee/f058b/2020-05-13-screenshot-00009.png 630w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>音声で聞いた英文を日本語にする</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/93553aea65a38f82cba7c1bfcebb3e54/ca12d/2020-05-13-screenshot-00008.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABlklEQVQ4y62Ty0rDQBSG8xA+gGvfQdy48yHcCoLgE7j2NbwtLF0ItptYKbQqtrpoSYWiiAgKItJLMjOZzCS/cyaJ1N5A7MDPOTnn5MufTMYJwxBCCCgVQWsNKSWoRjkpiiIkSWKjUspGUhzHSGCW6VE/X07htIBSqYxKpYJmo4FyuYz61TXa7TZarRZuG00bO56HbreLeq0G13XheR0wxpEyR4DkiJ5MkZySO0VOjQtt6uQyND1yRHWapZnc5QQQcxaN6wRz1yjMApPsG+TScTpQfFVYdQXWLgROXpSt9SPq/Z6fcDgBzJo7dxLbTYmNqsBWQ2L/IcL6pUD1Q9u+HrsvhzrJ2C7lwL22xMo5x/IZx+59iM2bEEtFhoPn1K2Kp7++M3pBijPgO9M4fOQ4euJ4CzSanxGOTf4ltH3tOJ7hsNfrgeT7PobDIYIgQH8wQMgCYze00tLEKM2VFPZvmCbadYcgBCMQiTFmo08y/1lgxLiJRnTN+WxZoKVnp+U/+gFSkhem5X/RD3BRskA6RnTsFiHa6W85NzL8zhfBvwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「音声聞き取り」画面"
+        title="「音声聞き取り」画面"
+        src="/static/93553aea65a38f82cba7c1bfcebb3e54/fcda8/2020-05-13-screenshot-00008.png"
+        srcset="/static/93553aea65a38f82cba7c1bfcebb3e54/12f09/2020-05-13-screenshot-00008.png 148w,
+/static/93553aea65a38f82cba7c1bfcebb3e54/e4a3f/2020-05-13-screenshot-00008.png 295w,
+/static/93553aea65a38f82cba7c1bfcebb3e54/fcda8/2020-05-13-screenshot-00008.png 590w,
+/static/93553aea65a38f82cba7c1bfcebb3e54/ca12d/2020-05-13-screenshot-00008.png 647w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>日本語の文章を英語にする</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/09b0a7c09cc67b49da18d06786141eb8/f058b/2020-05-13-screenshot-00010.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.48648648648649%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7CAAAOwgEVKEqAAAABB0lEQVQoz62R2W6DMBBF+f/P4T1RujwkQoj3skgEJSGtWMy+KNz6WiUqFQ1J1ZEO2LJ9PDPW0jSFZVkwDAPr1Qq6ruP55RW77RabzRMcx4brurDtN7XHNE2c3z8wDMOV76HleY4gCHA8HOD7PjzPw/F0wjkMpcxBHMdIkhShnHN9vw+QyCQYs8K2bSGEkIcS1HWNSsJ5luXg2m/xU3QVdl0Hlk3KspSiTMmFyFAUxaS04XKZZDVZ+0LDQswdusWi8NHQ+r5XPWO5pKoqBcfsKft4D03TgC6NgyiKVO8o5quPY/ZwvGAJJkCxehRmQjH/f4VSJeRnLG/u5n8X3gPPTkp+JJNb0PUJGX+ib6l6c98AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「英訳」画面"
+        title="「英訳」画面"
+        src="/static/09b0a7c09cc67b49da18d06786141eb8/fcda8/2020-05-13-screenshot-00010.png"
+        srcset="/static/09b0a7c09cc67b49da18d06786141eb8/12f09/2020-05-13-screenshot-00010.png 148w,
+/static/09b0a7c09cc67b49da18d06786141eb8/e4a3f/2020-05-13-screenshot-00010.png 295w,
+/static/09b0a7c09cc67b49da18d06786141eb8/fcda8/2020-05-13-screenshot-00010.png 590w,
+/static/09b0a7c09cc67b49da18d06786141eb8/f058b/2020-05-13-screenshot-00010.png 630w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Duolingoの特徴</h2>
+<h3>Duolingo通貨「リンゴット」</h3>
+<p>Duolingoには「リンゴット」というDuolingo内の通貨があります。リンゴットを使うことで便利なアイテムを購入できます。
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2c0d305e88542f61d3ac598ff559284a/6bbf7/2020-05-13-screenshot-00011.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 73.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAB6UlEQVQ4y61Uy67TMBD1D/MLfAQr1giJP2CFkNizYINY3La5TRryuE2ch+M0jpPDzLQuFdyKu8DSkaNJPD5zzkyU1hp5UaCqKuR5TsiQZRnKssTpNIHXuq546VLDMGDoOozWwhgDS7u1A5qmoYQn+WhZFkn6Eig+oB2xoL2pK0TRI/quxzDYK7tbnGO4XuS9xzzPsjMUZ3r1zeFdDLiuRvS4F3YswUgMnXPEdJRD0zSBKzpXYSXGl3B8pmRXhm82Dh8zD3gH3bSiH+t5PFaUXEtyrRuM4ygycALegxQL4/KsbuUO9PkAMwtlhDgful3Parj6GfOP91iLr2hagyRJoOuanM6JVS1sGXzBnwbxM8cDzhraEtOH1/Cf31IZA9L0JwpqI3ac9WI9jemlZI5x2ZYM43feL8I8gC9Qq2vhHz4ByRf6yIheDDvaK4vgZkCI3W0b0QP/Z6lDEmPzsPlL5N8snu/Fe8Yobo/kEN+98Z/TcakuQEp2BphoMKw9a8hGbLdb7Pf7u4zEcdo99aOAzPJkjLItkEb0g4gsWt3hcEikTXa7HeI4xkTtIG7TT4Sn43SZHpkUlqYssKQpFiKw0DvliFn0vUYRTTC9oWQFnp6OwpQT8WFulb7vZRTDpPCzuM4DwUy5Ewi/AIpDj67OWB4LAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「パワーアップアイテム購入」画面"
+        title="「パワーアップアイテム購入」画面"
+        src="/static/2c0d305e88542f61d3ac598ff559284a/fcda8/2020-05-13-screenshot-00011.png"
+        srcset="/static/2c0d305e88542f61d3ac598ff559284a/12f09/2020-05-13-screenshot-00011.png 148w,
+/static/2c0d305e88542f61d3ac598ff559284a/e4a3f/2020-05-13-screenshot-00011.png 295w,
+/static/2c0d305e88542f61d3ac598ff559284a/fcda8/2020-05-13-screenshot-00011.png 590w,
+/static/2c0d305e88542f61d3ac598ff559284a/6bbf7/2020-05-13-screenshot-00011.png 716w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>ランキングシステム</h3>
+<p>レッスンをクリアーすると「XP」というポイントがもらえます。そのポイントは利用者のランキングになります。ホーム画面に表示されます。</p>
+<p>XPポイントによって自分が所属するリーグがあります。私の場合は「ブロンズリーグ」です。基準のXPポイントを獲得できないとリーグから陥落してしまいます。また、リーグの中でXPポイントを多く取得していると上位リーグへ行けます。
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 401px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2f663851651309eb4062a4b8c2ad1b84/9144d/2020-05-13-screenshot-00012.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 106.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAA7CAAAOwgEVKEqAAAADoklEQVQ4y6VVy44bRRSdH+FDWMAHsGOXFavhG2CPEiVSQhRlRZQIhJRIIVEUiSRC5DGjQMRLyJNxjD3T07YHu7vt7na7313VjzrcWz1tByQ2UNZVl+WuU/eee871TtPUqOsa/7aapmk3Sul9TV83obb7ijD4952aX6oqTCYTjMcmVsEay+UCw+GQ9gGElDCOjxFGMaQs6aQPSBsoPSA/oqcLiDlUU1FiBNg0CkIUBDjFwUEPc8vGyYmBfr+P+XyOgEBN08RisYDtLAhsApUbUMUMKv6N9iYQ96BqQZkqypBSpWr+92IMxtphhspoicnjqxjd/wyZc4QkE3BsG3EcoyxLuK4Lz/NQETVRFFK2DrIshaTKXKJntfI0mOaQAaV/ih8vn8OTT99DOHqJIM4weNPXIEIIGIahy2ZwLn0wGGC9XiPPc4xGI0ynU31ZC0h11zKD+egKhrc/QeGOkRYSFvGXJIm+mUE4Sz4QRREsy9JgDOI4DnzfbxXAJdd1BaawlvRCHp3x0WxuVGC5tOUoIoqj5X27737TGfJBlo0mlbINwkhr6oxqLYW6bg928TZ4t7iaLMuoZDpQVgXKpsRPL/Zw9fx5PN17CZvk43pLBIeX4Ozvkv6W23bSyvMMaZpqCpi2rnEaUJY5RC3x6N43uHPrBr7f28dsNsOSXoqHFxD88hEUCZihVNNmn6YJgnVAHV5pehics/ybDkWR6xv/y+ImFUXBgNwAiYY+g197uHv9CxiHfX0jS4O1GBKv/IzjBGbvZ/iOBaqSrCh1MKcMyKFlkwrSVJXg3rUb+PDdD3Dz1l0tG9abaZ6Ql49Ii8eYzW3sf/sAY/J2Qfqczf6EQ5Jiv7NeNSCXXJF0eJ0ap/jyq8foG9Zm0nR08KOqamSUOQN0XVabJp1lyClzxwpZoXJ7wOHnaNwDZLnQMkhDH77ZR+I7GkieZcN8cfCegynRgCWNpFW4gB97KJ/uorq2A/Fsl0odo/e6j+nrVzi4/jGc37+DKGvtYQaKqXmnZLkxjb0wDHWHNxnGSYiYrfTH18DD91ENbyMkP/Poijwb3uAHRIup5q0rjYOzYlV0ew3IGmJuuG1+0eCVnWBVNNuJTRTxN3ZR925ny+3oUpoeLRvdcpmSWzJcfCPxzsMcFw5z+AubypmSeNfa2+ofdpNS6Ap4qvMFedY6p5VNESGhwfDcErh5lOHZLCcbubBoJnJJPLbeDgYoyATsEgblvwbOkJvzF4r/OIATIbxrAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="ランキングシステム画像"
+        title="ランキングシステム画像"
+        src="/static/2f663851651309eb4062a4b8c2ad1b84/9144d/2020-05-13-screenshot-00012.png"
+        srcset="/static/2f663851651309eb4062a4b8c2ad1b84/12f09/2020-05-13-screenshot-00012.png 148w,
+/static/2f663851651309eb4062a4b8c2ad1b84/e4a3f/2020-05-13-screenshot-00012.png 295w,
+/static/2f663851651309eb4062a4b8c2ad1b84/9144d/2020-05-13-screenshot-00012.png 401w"
+        sizes="(max-width: 401px) 100vw, 401px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Duolingoのメリット</h2>
+<p>語学は継続だと言われますが、継続するための仕掛けが盛り込まれています。</p>
+<p>まずはリンゴットです。継続すればするほどリンゴットはもらえます。リンゴットが増える楽しみがあります。レッスンを忘れてしまって継続記録が途絶えないようなアイテムがあり、モチベーションの低下を防いでくれます。</p>
+<p>ランキングシステムもその一つです。自分が競う相手も可視化されていますのでモチベーションを保ちやすいです。</p>
+<p>また、「フォーラム」と呼ばれるコミュニティがあります。世界中のDuolingoユーザーと会話ができます。同志の存在は励みになります。</p>
+<p>この他にもある条件をクリアーすると勲章をもらえます。勲章収集も励みになりますね。</p>
+<h2>Duolingoのデメリット</h2>
+<p>英語学習において継続は大事ですし、Duolingoを続ける上でデメリットはないように思います。</p>
+<p>ただ、私はDuolingoの英語の無料レッスンは一通り終了しているのですが、Duolingoだけで英文法を網羅しているとか、英単語数が足りるということはないように思いました。ですから、Duolingoだけをやっていても英語力は頭打ちになると思います。他の英語学習との併用が求められます。</p>
+<h2>Duolingoレビュー</h2>
+<p>デメリットでもお話しましたが、Duolingoだけである程度の英語力が身につくような仕組みにしてほしいなと感じます。</p>
+<p>基礎的なことを継続して反復することに意味があることは理解できますが、もう少し単語数や英文法の網羅性を取り入れてくれてもいいように思います。</p>
+<p>また、Duolingo内通貨「リンゴット」は、使うところがないために貯まっていくだけです。せっかくのシステムなのですから、もう少し新しい使い方が増えてほしいです。</p>
+<p>Duolingoの仕組み自体はとても敷居の低いもので誰もが始められます。日本人にとっての英語のようにある程度の知識があるものよりも、全く知らない言語学習に威力を発揮するのではないかと思います。</p>
+<h2>あとがき</h2>
+<p>今回は、言語学習サービス「Duolingo」のご紹介と簡単な進め方をご説明させていただきました。</p>
+<p>英語学習に興味がある方は一度やってみてください！　ホームページからでもスマホアプリからでも利用可能です。</p>
+<p>Duolingoでは、マイクを使用したレッスンもありますが、私が使用したことがありませんので、記事の中では触れていません。この点についても興味を持たれた方がいらっしゃいましたら、ぜひDuolingoを試してみてください。</p>
+<ul>
+<li>Duolingo (<a href="https://www.duolingo.com">https://www.duolingo.com</a>)</li>
+<li>Duolingoアプリ(Android) (<a href="https://play.google.com/store/apps/details?id=com.duolingo&#x26;hl=ja">https://play.google.com/store/apps/details?id=com.duolingo&#x26;hl=ja</a>)</li>
+<li>Duolingoアプリ(iPhone) (<a href="https://apps.apple.com/jp/app/duolingo%E3%81%A7%E8%8B%B1%E4%BC%9A%E8%A9%B1-%E3%83%AA%E3%82%B9%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%84%E4%BC%9A%E8%A9%B1%E3%81%AE%E7%B7%B4%E7%BF%92/id570060128">Duolingo</a>)</li>
+</ul>
+<p>以上です。読んでいただきありがとうございました。</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIDBQEE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHZ8fKtJ2EGdSpEvA//xAAcEAACAgMBAQAAAAAAAAAAAAABAgADBBESEzH/2gAIAQEAAQUCsfgC20T7MwsJkV+Vab4I2FpRTP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABURAQEAAAAAAAAAAAAAAAAAAAEg/9oACAECAQE/AQj/xAAdEAACAgIDAQAAAAAAAAAAAAABEQACECESMWGR/9oACAEBAAY/AtbJ6jtxI8xQgMOE12zryVfaiMYf3H//xAAaEAEBAQEBAQEAAAAAAAAAAAABEQAxURDR/9oACAEBAAE/IXCKoM6iXpdMIBOO9mx+bpYZjlZCnmBAo4mFHKn5/9oADAMBAAIAAwAAABBkKHz/xAAYEQEBAAMAAAAAAAAAAAAAAAABEBExQf/aAAgBAwEBPxB651En/8QAGREBAAMBAQAAAAAAAAAAAAAAAQARMRAh/9oACAECAQE/ECoK2OwUPOf/xAAfEAEBAAICAQUAAAAAAAAAAAABEQAhQVFhEDGBsfD/2gAIAQEAAT8QITrBhe39zi290AFnOhokescqhR7MnwCLKKyeF+wxATWVZaw7bkpOqOU2YWAUR5xR45pnwvv59P/Z" alt="まなびシステム" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/2c63057947c8236886c8fee7ac41894d/99438/profile-pic.jpg 1x,
+/static/2c63057947c8236886c8fee7ac41894d/aba1d/profile-pic.jpg 1.5x,
+/static/2c63057947c8236886c8fee7ac41894d/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/2c63057947c8236886c8fee7ac41894d/99438/profile-pic.jpg 1x,
+/static/2c63057947c8236886c8fee7ac41894d/aba1d/profile-pic.jpg 1.5x,
+/static/2c63057947c8236886c8fee7ac41894d/b315d/profile-pic.jpg 2x" src="/static/2c63057947c8236886c8fee7ac41894d/99438/profile-pic.jpg" alt="まなびシステム" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>崖っぷちブロガーの「<strong>まなびシステム</strong>」と申します。<br/>ITやPC関連を中心として体験にもとづいた学びを発信しています。どなたかの学びのキッカケになれたら幸いです。<!-- --> <!-- -->Twitter:<a href="https://twitter.com/manabisystem">@manabisystem</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2020-06-01-about-cookie/">← <!-- -->Windows 10で管理者権限でソフトウェアを自動起動させる方法</a></li><li><a rel="next" href="/2020-06-01-about-gigazo/">有料無線LANサービスでギガを節約する方法<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2020-06-01-about-duolingo/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-99b481ee1f9f6d6caddf.js"],"component---src-pages-404-js":["/component---src-pages-404-js-50205e4e99371a0751f6.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-c8754662282af222e758.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-6158fc8786a9c9dce156.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-6158fc8786a9c9dce156.js" async=""></script><script src="/fab8c9364b01cebfd3503fc18011994750f493ff-3db8bee75ffc31a3527a.js" async=""></script><script src="/commons-33dae9b3cd16545bc94a.js" async=""></script><script src="/app-99b481ee1f9f6d6caddf.js" async=""></script><script src="/styles-ae6d046c35c187471a06.js" async=""></script><script src="/framework-81e6052b3504df28bf0b.js" async=""></script><script src="/webpack-runtime-fe71116e022248e079fb.js" async=""></script></body></html>

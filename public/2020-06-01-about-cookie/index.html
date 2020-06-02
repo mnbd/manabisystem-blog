@@ -1,0 +1,421 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.491a16106869c73de5f8.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.21.37"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-165312579-3', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/favicon-32x32.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=edf3d310d67f8284a562bc3a58c3e761"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=edf3d310d67f8284a562bc3a58c3e761"/><title data-react-helmet="true">Windows 10で管理者権限でソフトウェアを自動起動させる方法 | まなびシステム</title><meta data-react-helmet="true" name="description" content="こんにちは！ まなびシステム（ @manabisystem ）です。 クッキーをご存知でしょうか？ ホームページ閲覧ソフトで使用される「クッキー(Cookie…"/><meta data-react-helmet="true" property="og:title" content="Windows 10で管理者権限でソフトウェアを自動起動させる方法"/><meta data-react-helmet="true" property="og:description" content="こんにちは！ まなびシステム（ @manabisystem ）です。 クッキーをご存知でしょうか？ ホームページ閲覧ソフトで使用される「クッキー(Cookie…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="manabisystem"/><meta data-react-helmet="true" name="twitter:title" content="Windows 10で管理者権限でソフトウェアを自動起動させる方法"/><meta data-react-helmet="true" name="twitter:description" content="こんにちは！ まなびシステム（ @manabisystem ）です。 クッキーをご存知でしょうか？ ホームページ閲覧ソフトで使用される「クッキー(Cookie…"/><meta data-react-helmet="true" name="google-site-verification" content="cae0696e75b8d17f7decc82d2df3f7ca485d436c"/><link as="script" rel="preload" href="/webpack-runtime-fe71116e022248e079fb.js"/><link as="script" rel="preload" href="/framework-81e6052b3504df28bf0b.js"/><link as="script" rel="preload" href="/styles-ae6d046c35c187471a06.js"/><link as="script" rel="preload" href="/app-99b481ee1f9f6d6caddf.js"/><link as="script" rel="preload" href="/commons-33dae9b3cd16545bc94a.js"/><link as="script" rel="preload" href="/fab8c9364b01cebfd3503fc18011994750f493ff-3db8bee75ffc31a3527a.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-6158fc8786a9c9dce156.js"/><link as="fetch" rel="preload" href="/page-data\2020-06-01-about-cookie\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/">まなびシステム</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Windows 10で管理者権限でソフトウェアを自動起動させる方法</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">June 01, 2020</p></header><section><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/fd81fc4a6775ea667ea4dd18121f7c51/29d31/2020-05-10_screenshot-00010.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABun2XKsQR/8QAHBAAAgICAwAAAAAAAAAAAAAAAQMAEQITITJB/9oACAEBAAEFAmsrIN42AT0iovr/AP/EABcRAAMBAAAAAAAAAAAAAAAAAAABIQL/2gAIAQMBAT8BWoU//8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIQIf/aAAgBAgEBPwErs//EABsQAAEEAwAAAAAAAAAAAAAAAAABESFBEDGB/9oACAEBAAY/AkR9nLJGoiMf/8QAHBABAAICAwEAAAAAAAAAAAAAAQARIUExUXGB/9oACAEBAAE/IVS+ELC26NLbAYKmUNmekDjPEJrtn//aAAwDAQACAAMAAAAQx+//xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAx/9oACAEDAQE/EO2YUW7/xAAYEQACAwAAAAAAAAAAAAAAAAAAAREhUf/aAAgBAgEBPxDQQlR//8QAHBABAQACAgMAAAAAAAAAAAAAAREAITFRQWGR/9oACAEBAAE/EFThwHL3HzJmhlI3FHg6zS2BQ3iEJBaKfMTFRYpmIpCu5Pef/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「クッキーの写真"
+        title="「クッキーの写真"
+        src="/static/fd81fc4a6775ea667ea4dd18121f7c51/1c72d/2020-05-10_screenshot-00010.jpg"
+        srcset="/static/fd81fc4a6775ea667ea4dd18121f7c51/a80bd/2020-05-10_screenshot-00010.jpg 148w,
+/static/fd81fc4a6775ea667ea4dd18121f7c51/1c91a/2020-05-10_screenshot-00010.jpg 295w,
+/static/fd81fc4a6775ea667ea4dd18121f7c51/1c72d/2020-05-10_screenshot-00010.jpg 590w,
+/static/fd81fc4a6775ea667ea4dd18121f7c51/29d31/2020-05-10_screenshot-00010.jpg 700w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>こんにちは！ まなびシステム（ <a href="https://twitter.com/manabisystem/">@manabisystem</a> ）です。</p>
+<p>クッキーをご存知でしょうか？</p>
+<p>ホームページ閲覧ソフトで使用される「クッキー(Cookie)」のお話です。</p>
+<p>ここでは、クッキーと個人情報について、初心者が最低限知っておいた方がいいことをご説明いたします。</p>
+<p>目次</p>
+<ul>
+<li><a href="#%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B">クッキーとは何か</a>？</li>
+<li><a href="#%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E5%95%8F%E9%A1%8C">プライバシー問題</a></li>
+<li><a href="#%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%E3%81%AE%E8%A6%8F%E5%88%B6">クッキーの規制</a></li>
+<li><a href="#%E3%82%8F%E3%82%8C%E3%82%8F%E3%82%8C%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E5%AF%BE%E5%87%A6%E6%B3%95%E3%81%AF%EF%BC%9F">われわれにできる対処法は？</a></li>
+<li><a href="#%E3%82%B5%E3%83%BC%E3%83%89%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BB%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%E3%82%92%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95">サードパーティ・クッキーをブロックする方法</a></li>
+<li><a href="#%E3%81%82%E3%81%A8%E3%81%8C%E3%81%8D">あとがき</a></li>
+</ul>
+<h2>クッキーとは何か？</h2>
+<p>ホームページ閲覧ソフトでホームページを見ると、このようなメッセージが突然現れたことはありませんか？</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 373px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8ece43f065aa3c5d8631ff02a59ae94d/67a5d/2020-05-10-screenshot-00001.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 22.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAAxklEQVQY0z1Q2Q6DIBD0/3/MWiMeoOKJUUPRd4+3KbuNfZgMm2UOCJZ5hpQSfd/DGIOu6yCVhG400lTgFUV+r2DtB/d94zgOnOfJ/JwJ13UxB8uyQCmFqqrQNA0bxfEbWZajbVsMw4C61ijLks/ruoI0VIA0sy+07zuztRaBcx9orRGG4V+U55k3jb1pxgbTNPlQCSEE30mSBKnfaV3zTC8k3rYNgTGjb1B7cYqiKDCOIzejdDKi1J+p4WDC05y+h0AzwTmHLzyeHqJl1/YpAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「このウェブサイトはCookieを使用します」画像"
+        title="「このウェブサイトはCookieを使用します」画像"
+        src="/static/8ece43f065aa3c5d8631ff02a59ae94d/67a5d/2020-05-10-screenshot-00001.png"
+        srcset="/static/8ece43f065aa3c5d8631ff02a59ae94d/12f09/2020-05-10-screenshot-00001.png 148w,
+/static/8ece43f065aa3c5d8631ff02a59ae94d/e4a3f/2020-05-10-screenshot-00001.png 295w,
+/static/8ece43f065aa3c5d8631ff02a59ae94d/67a5d/2020-05-10-screenshot-00001.png 373w"
+        sizes="(max-width: 373px) 100vw, 373px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5e149d5f013080db20ace84cb8d9578e/9bb7a/2020-05-10-screenshot-00002.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAB0UlEQVQoz4VR205aURDdaBtrm/jQekHFK5yDiEBsisVrK4iCGBpvD5qIolIbFBWVIxc19a23NKZp9MkP6Et/qQ9t09QYf2E5M4mXGKMnWZnZa8+sPbOO6hjfx3T6CP6ZD5hMfUd06QCRxFdYetagrDEU2+dg0uckFulXMOm3n1Vt9xqev9mDJ7oD38Q+2obzaI/uovH1BsydKdT1raO+L41y7zIsvWk6EygyV9uzLhxrNLzaQHXXKhQTznBehJr9m2gNZwk5OIaywrlGCnCEsvKA1b8FW8CAbcCAk+60oAFrgDh/BhpxzXSvqjtX0dS/SUWZywa+bCROp4YGmqS0bRGPXYnLeJFf55+4EyhxLkCZSVAPbkMf3BYhBotrwQzsgwZckTw8BHekQJvkKC+QRbtw8+S0BW8nFtHKLKrKO5bRGsqJUAsVcBFHXl0jYTP5wjVVvpR4+sybROXLFVT6VsTXCspryEOestgeh3pEiYXMlRc8b/HQMS+jl7W/IyxB2WKCm3/2Zv6gJS69io2dSh9iNPkN4fkvGIp/RiD2EU9fJOXlpv4tyS8a7gLXqL2Dn+Dv1+8T/Pl3Kvj7/wwhEl/MHcP49APesfcwabP3CjLOAZibSf83ixqTAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「Your privacy」画像"
+        title="「Your privacy」画像"
+        src="/static/5e149d5f013080db20ace84cb8d9578e/fcda8/2020-05-10-screenshot-00002.png"
+        srcset="/static/5e149d5f013080db20ace84cb8d9578e/12f09/2020-05-10-screenshot-00002.png 148w,
+/static/5e149d5f013080db20ace84cb8d9578e/e4a3f/2020-05-10-screenshot-00002.png 295w,
+/static/5e149d5f013080db20ace84cb8d9578e/fcda8/2020-05-10-screenshot-00002.png 590w,
+/static/5e149d5f013080db20ace84cb8d9578e/9bb7a/2020-05-10-screenshot-00002.png 676w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>クッキーとは、あなたの使用しているホームページ閲覧ソフトとホームページを設置しているコンピューターとやり取りするためのファイルです。</p>
+<p>簡単に言うと病院の診察券のようなものです。</p>
+<p>初めに診察券を発行してもらい、それ以降はあなたの診察券をもとに情報のやり取りが行われます。</p>
+<p>毎回、診察券の情報を病院側に伝えていたら大変な手間ですよね。</p>
+<p>病院側にあなたの個人情報をあずけるけるわけですから、お互いの信頼関係のもとに行われている仕組みです。</p>
+<p>クッキーを利用する上で馴染みが深いのは、本来なら何度も必要になるIDとパスワードの入力を省略したり、通信販売のホームページでの買い物かごに入れた商品を後から再度入れ直さなくてよかったりすることです。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b842b6cb4054461ff0a81c4106dd0215/8c557/2020-05-10-screenshot-00003.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABW0lEQVQoz21RTW+CUBDk/9ekHjQl4VIPNalatUpNvID+BqEgJhhQiUDELwgiAh1ZQ0naOcDydmffzMBkWRaGoe/7URQ5jmPbNuo0TXGeloDPIAh2u93pdMJztVqBxeD0fD6Ds9/vv3OguN1uRM5KwLSiKLPZTJIkWZIulwuDCc/z4jhGD/uszeZwONA0tkCLruuWZRUr3prN10aD6jt5sVh8jUYY6nV7rffWdrtFY7lczudzrFNVVdM0SE2SBMPP1eoLy/6SATRs2+E4jmVZ0zRJJIkn/dfrlYrPwWA8HqO8k8uuimwIQQ47R/YfGIQMS7ANq5BqGsbxeKSb1+u1YRgISZblgv/R7cL2g4xR9ARBmEwmPD/s9/uO46KBIKAfgcGt67rYS7qeKpVavf4g0wtpI7BaDvKMq3AnVoiiOJ1OwSdf7U5nyPNpERjS+uuHQkJmkFb8ebqmqH8AKvAmAHZsyhkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「Cookieの仕組み」画像"
+        title="「Cookieの仕組み」画像"
+        src="/static/b842b6cb4054461ff0a81c4106dd0215/fcda8/2020-05-10-screenshot-00003.png"
+        srcset="/static/b842b6cb4054461ff0a81c4106dd0215/12f09/2020-05-10-screenshot-00003.png 148w,
+/static/b842b6cb4054461ff0a81c4106dd0215/e4a3f/2020-05-10-screenshot-00003.png 295w,
+/static/b842b6cb4054461ff0a81c4106dd0215/fcda8/2020-05-10-screenshot-00003.png 590w,
+/static/b842b6cb4054461ff0a81c4106dd0215/8c557/2020-05-10-screenshot-00003.png 700w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>プライバシー問題</h2>
+<p>ホームページを閲覧する上でとても便利なクッキーですが、問題もあります。</p>
+<p>それはプライバシーです。</p>
+<p>あるホームページで自分の地域の記事を見ると、全く別のホームページで自分の地域に関連した広告が表示されて驚いたことはないでしょうか？</p>
+<p>こうした問題が多くのページで起きています。</p>
+<p>これは、ホームページ管理者だけでなく、ホームページに貼られた広告の管理者など第三者がクッキーの情報を利用していることを示唆しています。</p>
+<p>このため、複数のホームページを横断する形であなたの情報を得ることができるのです。</p>
+<h2>クッキーの規制</h2>
+<p>こうしたプライバシーの問題によって、世界的にクッキーの規制強化が進んでいます。</p>
+<p>EUの一般データ保護規則(GDPR)では、「クッキーを使用する上でホームページ閲覧者の同意が必要である」としました。</p>
+<p>こうした流れに追従する形で、日本のホームページでもクッキーの同意を求める動きが出てきています。
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 373px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8ece43f065aa3c5d8631ff02a59ae94d/67a5d/2020-05-10-screenshot-00001.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 22.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAAxklEQVQY0z1Q2Q6DIBD0/3/MWiMeoOKJUUPRd4+3KbuNfZgMm2UOCJZ5hpQSfd/DGIOu6yCVhG400lTgFUV+r2DtB/d94zgOnOfJ/JwJ13UxB8uyQCmFqqrQNA0bxfEbWZajbVsMw4C61ijLks/ruoI0VIA0sy+07zuztRaBcx9orRGG4V+U55k3jb1pxgbTNPlQCSEE30mSBKnfaV3zTC8k3rYNgTGjb1B7cYqiKDCOIzejdDKi1J+p4WDC05y+h0AzwTmHLzyeHqJl1/YpAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「このウェブサイトはCookieを使用します」画像"
+        title="「このウェブサイトはCookieを使用します」画像"
+        src="/static/8ece43f065aa3c5d8631ff02a59ae94d/67a5d/2020-05-10-screenshot-00001.png"
+        srcset="/static/8ece43f065aa3c5d8631ff02a59ae94d/12f09/2020-05-10-screenshot-00001.png 148w,
+/static/8ece43f065aa3c5d8631ff02a59ae94d/e4a3f/2020-05-10-screenshot-00001.png 295w,
+/static/8ece43f065aa3c5d8631ff02a59ae94d/67a5d/2020-05-10-screenshot-00001.png 373w"
+        sizes="(max-width: 373px) 100vw, 373px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>われわれにできる対処法は？</h2>
+<p>こうした懸念に具体的にどのように私たちは対処すればいいのでしょうか？</p>
+<p>何か監視されているようで嫌だなと思う場合はどうしたらいいのでしょうか？</p>
+<p>まず、ご説明しましたとおり、クッキーという仕組みはとても便利なものです。</p>
+<p>利用しなければ正常な閲覧ができないホームページも存在します。</p>
+<p>ですから、利用せざるをえない部分があるので、ファーストパーティ・クッキーだけを使用するようにしてはどうかと思います。</p>
+<h3>ファーストパーティ・クッキー</h3>
+<p>ファーストパーティ・クッキーとは、ホームページ閲覧者とホームページのあるコンピューターとの間で発行されるクッキーのことです。</p>
+<h3>サードパーティ・クッキー</h3>
+<p>サードパーティ・クッキーというのは、そのホームページのあるコンピューターとは別（第三者）のコンピューターとの間で発行されるクッキーのことです。</p>
+<h2>サードパーティ・クッキーをブロックする方法</h2>
+<p>ここでは、サードパーティ・クッキーをブロックする手順を、利用者の多いホームページ閲覧ソフトであるグーグルクロームPC版を例にご説明いたします。</p>
+<p>この設定により、ファーストパーティ・クッキーはブロックされることはありませんので、ホームページの閲覧に支障をきたすことはありません。</p>
+<h3>1.右上の3点マークをクリックする</h3>
+<p>グーグルクロームを起動して、画面右上の3点マークをクリックしてください。
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7c22f5adb0578ae176e9936e33760072/21b4d/2020-05-10-screenshot-00004.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.02702702702703%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABVElEQVQ4y5VUy3LDIAz0/39K/6B/kEMv7SG5tDOZ9JA2STsT29gICW0FJG4ezouZRQiJZQXGVe8atE2L7bZGU9dQ3yD6Fs+vDZ4mNVpHAMTAFyAFmyXw+40qxogEVc1giRkdRTgDcfIFweYCxyGeEUt+WK3RbH7QBUGFB5vmTotjG2Fpypwb4tVe2SnSUkeK2SdDv96x3q6wmM+BQNAdsabKQjhad6awBMrYm4DpwrqPCWaLOd5epjbpBpV6si4rxMhkOlOigL7voOJBB1UmIyw551+ADuNRwmSDlZLgiaxKsuNisPkxXRDzEeFhu0Bot9x1+XaJvBFTJvammHebHG5+kzDt7r3PVoyUTVFSu/fF/LsIxxKufkIjuRfP8B7crfAW8bW86pFyxmIPKUzv1JOg6wV1y9lKPFcYba6n8tavEsbd42dLDKHYOFKypJ9J7/Nj+AN1jqGB7Wtn0AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「グーグルのホーム」画面"
+        title="「グーグルのホーム」画面"
+        src="/static/7c22f5adb0578ae176e9936e33760072/fcda8/2020-05-10-screenshot-00004.png"
+        srcset="/static/7c22f5adb0578ae176e9936e33760072/12f09/2020-05-10-screenshot-00004.png 148w,
+/static/7c22f5adb0578ae176e9936e33760072/e4a3f/2020-05-10-screenshot-00004.png 295w,
+/static/7c22f5adb0578ae176e9936e33760072/fcda8/2020-05-10-screenshot-00004.png 590w,
+/static/7c22f5adb0578ae176e9936e33760072/efc66/2020-05-10-screenshot-00004.png 885w,
+/static/7c22f5adb0578ae176e9936e33760072/c83ae/2020-05-10-screenshot-00004.png 1180w,
+/static/7c22f5adb0578ae176e9936e33760072/21b4d/2020-05-10-screenshot-00004.png 1280w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>2. 「設定」をクリックする</h3>
+<p>出てきたメニューから「設定」をクリックしてください。
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 338px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/af7c6a53d9a33c8b57d46b1326aedbb2/2b41d/2020-05-10-screenshot-00005.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 127.70270270270272%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAA7BAAAOwQG4kWvtAAADZUlEQVRIx4VV247TSBD15/MjPMIrggcuAsQs2pV2xGoEAZLxJHZ8v9vx/eypsh0NyUympY7jdtfpqjqnqo2sKCEzzQtknMtzWT+fBfKygrndoTocYN5t8e/1N4RhCNu2YaRZriBFdUBOg6Kcnsv62eS6AN4SqOBzt7PwY/WLgBEsi4DDMKBrW1hEz/Icruuo0TLGcXxw3h8Z92dZpv8JOKLvOnU3SVPEUYQkSVCWJbquP4KejmWtpTO+HyCl7cC1I6A1AyZpgpSAe75XVX0Gcuph2zYIo5g2Kdp+gNHzRzYUTPZ0UoY4jtVL27bw7b8bmOaW3nZ/eNY0NRzXo40Pa7dFxMgkIqPlxr7v1aBrOzQMoWkanXXdKJN1Xetmybc40Eve+S7ruo97JHTBUVKGocfNzQ1WP3/zQ4fHxmOkLEPyfgR0XZchuBpyximeXAJZ3sVe1CFgMymDLibMW8g8xHGCgLl8jOHTA8Q2om1OjSqgeDIwdmE2CMJJoGRY8vGQDi+FL8Qa4okYywlN086J7zXkxfvpfSJFQpO9Ss68djjU8DxvImUBFGFWVQU5cAFaZsfvwqawG4UB8+2rKoRlCVO+7SxL1wzZPI4D9eRhZzuo+REKernklv/ijOQ+Ye7FRkkZybKz38PaOyjZGC6NU2Cx1+jKKTpjyVGSsHxYdiGJkVAuNYYF8CEFGL16OGCz2WBj3h1L7CnAY8i0FQ2Hfrh0m0k2NpOqDWLuNBK62DwllYnlg5atlJ+hkqBXUh2O41DUvjYHqZj7QGJ4f6gjJyELsMpGln+u1wjmxtowh/ZuB/P2Dq7n68kjGZSDPB6ovY+AkmvL2mHveLBJasGoVDZtEGDz9z/wVys0FCiFg1TY47VQaKPt9NCKAHKvVAfRH1SfMVMkd1Be5NqZjIEG0dUXfP/8CasvV/Dfv0f+7BmK58/RE3yUEhRxU/Q9S2vkc5B2RuO+rs9kZQgh1WYN668rrD9+wp43WHl9jejtW8QfPiB5+RIlFWB//Qrv1SvEL17AffMG0evXCN69QyuFcMxhLQ2W9SgvPDkhEXKzSXjDPKWt1/wWb7cIKSvPNBFQDQFVETOCbq77fmZb75Tl5srZ146SeKSJPjUMaTkhC/721sSv32tKx1UtCqN/TOmVZzM+2/c/CVDfKTE66/YAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「Google chromeの設定メニュー」画像"
+        title="「Google chromeの設定メニュー」画像"
+        src="/static/af7c6a53d9a33c8b57d46b1326aedbb2/2b41d/2020-05-10-screenshot-00005.png"
+        srcset="/static/af7c6a53d9a33c8b57d46b1326aedbb2/12f09/2020-05-10-screenshot-00005.png 148w,
+/static/af7c6a53d9a33c8b57d46b1326aedbb2/e4a3f/2020-05-10-screenshot-00005.png 295w,
+/static/af7c6a53d9a33c8b57d46b1326aedbb2/2b41d/2020-05-10-screenshot-00005.png 338w"
+        sizes="(max-width: 338px) 100vw, 338px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>3. 「サイトの設定」をクリックする</h3>
+<p>「プライバシーとセキュリティ」の項目から「サイト設定」をクリックしてください。
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8baf23e9853b0465692aadfc751a378d/78612/2020-05-10-screenshot-00006.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 76.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACCElEQVQ4y42S227TQBCG/Z5IcMNFGh4CJAqoChReB3EBUblHQuLUOAQSN4nTyoddr/dgOz8zdra4aYqw9Gtn157P/8xOMIsVZGGQCYXoUmD0bo7T9zFef/hPjWO8GW8oZ42Tt3MER6czPHgR4t7TH7j/7ByD0U8Mnn/Co+MzDI8/4uGTs7v1eIzByVcMX80wfDnF0ShEcP47wZdwg8k8w2xZYBJJhIsM38IVPn+PKE7xayUPaykwWeQk0SkSCNI0QZ6nsFbDWYPttoYxJZwzqCqLunLYNvWdaprqhoJcFGApbVCStHHUUwWlCFrVqOqG1qqNr+WqThRrY1GS/BpkuUC8uUJBAGNd+8I6gkpJUEWOt/jX43N4ZQVCskN547DUmtogkKQpVFlS6ezKda7IcZnl0JTDznXrzv0FppmgJN1uvEtJa0YJudz9iEAsS2C1uUQWTqES6rvzQNsH5q1D3rRg+khmGVbzBUSSwHI/6ZvKUisWC9j1mi6jacvldtwq2R+0hyxyUcQxrqZT5BcXyKMIcrmEIpBarSAotvSjO4H9jY/ZaUHOLMV8QX0Zdupvmff7Jfd74FfuJcec5AGHxO/2cwNP7h9qY6CKoh0bQ/Guvt2gbK9Hqa67OdQ9xkFg2ZZctOKyfL+8/MPAWyX3gR3Udb3jUkkVzRozPKihG+Y55Rnk7/aBfwCVrmtQUiRlgAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「Google chrome」の設定画面"
+        title="「Google chrome」の設定画面"
+        src="/static/8baf23e9853b0465692aadfc751a378d/fcda8/2020-05-10-screenshot-00006.png"
+        srcset="/static/8baf23e9853b0465692aadfc751a378d/12f09/2020-05-10-screenshot-00006.png 148w,
+/static/8baf23e9853b0465692aadfc751a378d/e4a3f/2020-05-10-screenshot-00006.png 295w,
+/static/8baf23e9853b0465692aadfc751a378d/fcda8/2020-05-10-screenshot-00006.png 590w,
+/static/8baf23e9853b0465692aadfc751a378d/efc66/2020-05-10-screenshot-00006.png 885w,
+/static/8baf23e9853b0465692aadfc751a378d/c83ae/2020-05-10-screenshot-00006.png 1180w,
+/static/8baf23e9853b0465692aadfc751a378d/78612/2020-05-10-screenshot-00006.png 1260w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>4. 「Cookieとサイトデータ」をクリックする</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/826540c7da5f3b88f1b6ca20f404488d/78612/2020-05-10-screenshot-00007.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 76.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAB6UlEQVQ4y5WS227TQBCG/aBIcFEk2iKeIVxAWigtrwNccBS95Q7UKk7SxnHs2HF82JNPPzObuERVopSVfjuz6/nmn9k47qzAIsmtvHmOtx/HOP3k4fzzjBTg4st+vf8a2u9PP4zhHF2M8OTExaNX13j8+hqHZ0M86//Ci/5PPO9f4qD3A09fbqj3nbT6fdD7hsM3v3F8PsLxOxdHZwM4g0mKP8MIQy/HTSDh+hKjmcDYz6y8ubKasEIJLzaYRNrGN9TdgPJcX8CdCgwp14mTFMkyg9IG2pRo6hJtU6GpDOgBepBqdKuOAtRxeBfzt3W9ymM5aS7AEspAshhcVjBVTe/SFlJUSC6XMEEIE8VUhwq2LVqS0qXNUWs5yzRDEEYohLQOGVbEC+S+DxHOoaIIJkkgrq6gww1nBONlTHnXHcvJ8gJplq827UEFRUWi21ssplMUBGQJgpZ5ziQL66TvA3l+QiobFELZQ0MtFVKuXRtsrnY/MLUOORBSrw9ploLmSlJUbBdsK7Db6Db5XdIctdbIqUWlFCpyXNHeg4CbQQc2dLtFUVigIbedHgy8D2WHKV2MpDk2TfP/Lf/T2iHPk+bHrXISQ7fB9gK7A6k0siyzbfIsucAu6F4g//PZaUpAvuG6rne62wb8Cwdobx5veWvRAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「」画面"
+        title="「」画面"
+        src="/static/826540c7da5f3b88f1b6ca20f404488d/fcda8/2020-05-10-screenshot-00007.png"
+        srcset="/static/826540c7da5f3b88f1b6ca20f404488d/12f09/2020-05-10-screenshot-00007.png 148w,
+/static/826540c7da5f3b88f1b6ca20f404488d/e4a3f/2020-05-10-screenshot-00007.png 295w,
+/static/826540c7da5f3b88f1b6ca20f404488d/fcda8/2020-05-10-screenshot-00007.png 590w,
+/static/826540c7da5f3b88f1b6ca20f404488d/efc66/2020-05-10-screenshot-00007.png 885w,
+/static/826540c7da5f3b88f1b6ca20f404488d/c83ae/2020-05-10-screenshot-00007.png 1180w,
+/static/826540c7da5f3b88f1b6ca20f404488d/78612/2020-05-10-screenshot-00007.png 1260w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>5. 「サイトにCookieデータの保存と読み取りを許可する（推奨）」をオフにする</h3>
+<p>「サイトにCookieデータの保存と読み取りを許可する（推奨）」の右端にある丸いスイッチのマークをクリックして青くしてください。
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/38d9b6bb28a8275faa63d919aecded15/78612/2020-05-10_screenshot-00008.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 76.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAB60lEQVQ4y5WQ/2rTUBTH86CCCsKmw0l9hU2kOtSXEIXpW7ghCIJ/TVu7LFlabW3X3JukN/fmx9dzTox2oRsu4cv3nCTnc78n3mCSYhknmC9iBFONrbenuPt6hHtvfGwdnmP7HenwKoX0PsL2+7E4z3o7r85wp3+KW0+GuP10iN2XPh4++4LH/WP0+h9xf+8DHuwfXdbeEXb2j6V+dHCC3sEAvedfsfuCgKNI4Zs/hz9OEE5XGE1W8CcJgrHC2ZhSUx1NM1H4M0XwI8H34AI+zYVcfx5g+OkE/mBCsxm8xVIhjjVMbmGtRVWXsItfyKIQ2SRCSp5EAZLzAMV8CqgLYLkA9BLKD6H9ADXdZV2hKh08lWRgZcZiRTK5IzdQMR+kxEVKo3CFyLEXRfOtLSSMkVkLL6YPZ7M50myF3DqRMTm01gRRmE1nBI7/9Bp5ntMmjqAOVVVR34BkjoE6SaF0cukhDzSDfLIRr+taAOztVVX135k2jMf/L1sZadLMyEtZyTnxsigvQZq6FrdFtQmoJCE3Ga3aAJ2kYvG/aoHs63VJCW0X2J7wb2WCMTBvYOtrdoFFuSHhetOCeVUGcUJOe13CjcAulBNyOptfD3TFFSuvy8iqJU9Iyu7KXfB/AR2l616boDcGtklukvA38f5rGT6gIywAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「プライバシーとセキュリティ」画面1"
+        title="「プライバシーとセキュリティ」画面1"
+        src="/static/38d9b6bb28a8275faa63d919aecded15/fcda8/2020-05-10_screenshot-00008.png"
+        srcset="/static/38d9b6bb28a8275faa63d919aecded15/12f09/2020-05-10_screenshot-00008.png 148w,
+/static/38d9b6bb28a8275faa63d919aecded15/e4a3f/2020-05-10_screenshot-00008.png 295w,
+/static/38d9b6bb28a8275faa63d919aecded15/fcda8/2020-05-10_screenshot-00008.png 590w,
+/static/38d9b6bb28a8275faa63d919aecded15/efc66/2020-05-10_screenshot-00008.png 885w,
+/static/38d9b6bb28a8275faa63d919aecded15/c83ae/2020-05-10_screenshot-00008.png 1180w,
+/static/38d9b6bb28a8275faa63d919aecded15/78612/2020-05-10_screenshot-00008.png 1260w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>6. 「サードパーティのCookieをブロックする」をオフにする</h3>
+<p>「サードパーティのCookieをブロックする」の右端にある丸いスイッチのマークをクリックして青くする。
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/267debbd4ec6a908d02078f3c304053a/78612/2020-05-10-screenshot-00009.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 76.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACAklEQVQ4y5WR3W7TQBCF/aBIcAESbeEZaC+IKC0pr0OFBBVF3HIHKEqdNE5jOyFZ/6z31z7MruMSQoqKpaPZGXm+PbMThAnHipVYLDNE8xwn59c4Po9w8n6K/scEZ/fQ24sU/Q8xjt+NEeyfjfDo1RAPXg7wsDfA3mmIp72veN67xLPeFzx+8QlPDi9bHa11SLWjzz7uvf6Gg/4IB2+usH86RDCMMvwIFwinBa6TClczjnHMMYkpnxWY0AQ3C+kVpYJy+idiGM9KOpcYxZQnEiHFcFYh+LnKwFgOIRWU0qitRtNYGCOhtYSSFaST4AAabH6SxLMcfDREdRPBKIEgKzicuFCoSIKgnGVYxTEpuRVLUqi8gCoKH3VZokiXWH4foFwyVFz4/oDRDWm6QMnJBcGkNvRjilVCoHSOeDLBks5sPvd5lWUQeQ5VVWDTFCyeQ5Fx30sK8qJERje6kaVsHUrOUa1WEIyBu0gQSzVDsgSqSXYt39P1SueQ3o9XwtNLsu2K2tAb2la2rrderv1cTdvWmQeuIwEz79AVuJDtcrSmZSgvQ0/QNM1OWdv4RXZAP3JH/n2LvgUaY1A7h03rsQN1Z2PrPxx64GbSgbVuQUq5s74TaOtmN3Ab6hw6d0r+G6jNHSNvSvhRrevwLrdH3gbfC6jJ3V9b3QH9b+DmRu/r8BeVs24o9nZCxAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="「プライバシーとセキュリティ」画面2"
+        title="「プライバシーとセキュリティ」画面2"
+        src="/static/267debbd4ec6a908d02078f3c304053a/fcda8/2020-05-10-screenshot-00009.png"
+        srcset="/static/267debbd4ec6a908d02078f3c304053a/12f09/2020-05-10-screenshot-00009.png 148w,
+/static/267debbd4ec6a908d02078f3c304053a/e4a3f/2020-05-10-screenshot-00009.png 295w,
+/static/267debbd4ec6a908d02078f3c304053a/fcda8/2020-05-10-screenshot-00009.png 590w,
+/static/267debbd4ec6a908d02078f3c304053a/efc66/2020-05-10-screenshot-00009.png 885w,
+/static/267debbd4ec6a908d02078f3c304053a/c83ae/2020-05-10-screenshot-00009.png 1180w,
+/static/267debbd4ec6a908d02078f3c304053a/78612/2020-05-10-screenshot-00009.png 1260w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>あとがき</h2>
+<p>いかがでしたでしょうか？</p>
+<p>クッキーは、ホームページを閲覧する上でなくてはならない仕組みです。</p>
+<p>クッキーを利用できなければ、利便性はかなり下がるといっていいでしょう。</p>
+<p>しかし、こうした仕組みを理解しておくことで、クッキーを食べながら驚いてむせっかえることもなくなるのではないでしょうか！</p>
+<p>インターネットを利用したサービスを受ける上で個人情報の問題は切っても切り離せません。</p>
+<p>クッキーに限らず、ウィルス対策ソフトを導入やあやしいホームページを閲覧しないように心がけるなど個人情報への最低限の取り組みはしておきたいものですね。</p>
+<p>以上です。読んでいただきありがとうございました。</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIDBQEE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHZ8fKtJ2EGdSpEvA//xAAcEAACAgMBAQAAAAAAAAAAAAABAgADBBESEzH/2gAIAQEAAQUCsfgC20T7MwsJkV+Vab4I2FpRTP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABURAQEAAAAAAAAAAAAAAAAAAAEg/9oACAECAQE/AQj/xAAdEAACAgIDAQAAAAAAAAAAAAABEQACECESMWGR/9oACAEBAAY/AtbJ6jtxI8xQgMOE12zryVfaiMYf3H//xAAaEAEBAQEBAQEAAAAAAAAAAAABEQAxURDR/9oACAEBAAE/IXCKoM6iXpdMIBOO9mx+bpYZjlZCnmBAo4mFHKn5/9oADAMBAAIAAwAAABBkKHz/xAAYEQEBAAMAAAAAAAAAAAAAAAABEBExQf/aAAgBAwEBPxB651En/8QAGREBAAMBAQAAAAAAAAAAAAAAAQARMRAh/9oACAECAQE/ECoK2OwUPOf/xAAfEAEBAAICAQUAAAAAAAAAAAABEQAhQVFhEDGBsfD/2gAIAQEAAT8QITrBhe39zi290AFnOhokescqhR7MnwCLKKyeF+wxATWVZaw7bkpOqOU2YWAUR5xR45pnwvv59P/Z" alt="まなびシステム" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/2c63057947c8236886c8fee7ac41894d/99438/profile-pic.jpg 1x,
+/static/2c63057947c8236886c8fee7ac41894d/aba1d/profile-pic.jpg 1.5x,
+/static/2c63057947c8236886c8fee7ac41894d/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/2c63057947c8236886c8fee7ac41894d/99438/profile-pic.jpg 1x,
+/static/2c63057947c8236886c8fee7ac41894d/aba1d/profile-pic.jpg 1.5x,
+/static/2c63057947c8236886c8fee7ac41894d/b315d/profile-pic.jpg 2x" src="/static/2c63057947c8236886c8fee7ac41894d/99438/profile-pic.jpg" alt="まなびシステム" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>崖っぷちブロガーの「<strong>まなびシステム</strong>」と申します。<br/>ITやPC関連を中心として体験にもとづいた学びを発信しています。どなたかの学びのキッカケになれたら幸いです。<!-- --> <!-- -->Twitter:<a href="https://twitter.com/manabisystem">@manabisystem</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2020-06-01-blog-to-twitter-ifttt/">← <!-- -->ブログの投稿を自動でTwitterに投稿する方法</a></li><li><a rel="next" href="/2020-06-01-about-duolingo/">無料ネットサービスを利用した英語勉強法<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2020-06-01-about-cookie/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-99b481ee1f9f6d6caddf.js"],"component---src-pages-404-js":["/component---src-pages-404-js-50205e4e99371a0751f6.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-c8754662282af222e758.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-6158fc8786a9c9dce156.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-6158fc8786a9c9dce156.js" async=""></script><script src="/fab8c9364b01cebfd3503fc18011994750f493ff-3db8bee75ffc31a3527a.js" async=""></script><script src="/commons-33dae9b3cd16545bc94a.js" async=""></script><script src="/app-99b481ee1f9f6d6caddf.js" async=""></script><script src="/styles-ae6d046c35c187471a06.js" async=""></script><script src="/framework-81e6052b3504df28bf0b.js" async=""></script><script src="/webpack-runtime-fe71116e022248e079fb.js" async=""></script></body></html>
