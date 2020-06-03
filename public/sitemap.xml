@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://manabisystem.com/2020-06-03-non-designers-design-book/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-kuromitsu-warabimochi-hamausagi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-about-morning-page/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-about-gigazo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-about-duolingo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-about-cookie/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-blog-to-twitter-ifttt/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-gmobb-wsr-2533dhp3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-how-to-create-google-account/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-zenkaku-hankaku/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-about-freesoft/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-gigazo-key-trouble/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-aquos-sense3-plus-sound/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-06-01-natsu-dorayaki-hamausagi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-05-31-start-gatsby-starter-blog-no-styles/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-05-31-startup-with-administrator-authority-for-windows-10/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://manabisystem.com/2020-05-30-hello-world/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/non-designers-design-book/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/about-cookie/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/about-duolingo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/about-gigazo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/about-freesoft/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/about-morning-page/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/aquos-sense3-plus-sound/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/blog-to-twitter-ifttt/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/gigazo-key-trouble/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/gmobb-wsr-2533dhp3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/how-to-create-google-account/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/kuromitsu-warabimochi-hamausagi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/natsu-dorayaki-hamausagi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/zenkaku-hankaku/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/start-gatsby-starter-blog-no-styles/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/startup-with-administrator-authority-for-windows-10/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://manabisystem.com/hello-world/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://manabisystem.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
